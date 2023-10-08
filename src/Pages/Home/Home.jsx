@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import AboutUs from "../AboutUs/AboutUs";
 import Banner from "../Banner/Banner";
-import ChooseUs from "../ChooseUs/ChooseUs";
 import Service from "../Services/Services";
+import ChooseUs from "../ChooseUs/ChooseUs";
 
 const Home = () => {
     const servicesData = useLoaderData()
@@ -19,6 +19,7 @@ const Home = () => {
             </div>
             <AboutUs></AboutUs>
             <ChooseUs></ChooseUs>
+            
         </div>
     );
 };

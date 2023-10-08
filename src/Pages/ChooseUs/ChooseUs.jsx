@@ -1,5 +1,6 @@
 
 const ChooseUs = () => {
+
     return (
         <div className="bg-[#2CDAB9] px-24 py-24 ">
             <div className="text-center mb-16">
@@ -17,7 +18,7 @@ const ChooseUs = () => {
                     <h2 className="card-title text-base mt-4">Emam Uddin!</h2>
                 </div>
                 <div className="border p-8 bg-white rounded-lg">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry is standard dummy text</p>
                     <h2 className="card-title text-base mt-4">Muhammad Romon!</h2>
                 </div>
             </div>
