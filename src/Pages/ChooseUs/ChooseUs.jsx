@@ -15,7 +15,7 @@ const ChooseUs = () => {
                 </div>
                 <div className="border p-8 bg-white rounded-lg">
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                    <h2 className="card-title text-base mt-4">Emam Uddin!</h2>
+                    <h2 className="card-title text-base mt-4">Nazmul Hasan!</h2>
                 </div>
                 <div className="border p-8 bg-white rounded-lg">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry is standard dummy text</p>

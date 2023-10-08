@@ -1,6 +1,20 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
+    const { user,logOut } = useContext(AuthContext)
+    console.log(user?.email)
+
+    const handleSignOut=()=>{
+        logOut()
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+    }
     return (
         <div className="max-w-[1210px] mx-auto px-4 py-4 ">
             <div className=" flex items-center justify-between ">
@@ -20,6 +34,31 @@ const Navbar = () => {
                                 Home
                             </NavLink>
                         </li>
+                        {  // if user is logges so show the this route
+                            user && <>
+                              <li>
+                            <NavLink
+                                to="/blog"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-[#1BB7E8] py-2 px-6 rounded-full bg-gray-200 text-lg font-semibold" : ""
+                                }
+                            >
+                                Blogs
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/team"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-[#1BB7E8] py-2 px-6 rounded-full bg-gray-200 text-lg font-semibold" : ""
+                                }
+                            >
+                                Team 
+                            </NavLink>
+                        </li>
+                            
+                            </>
+                        }
                         <li>
                             <NavLink
                                 to="/login"
@@ -41,17 +80,18 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                     </ul>
-
                 </div>
                 <div className="flex navbar-end">
-                <div>
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img src="https://i.ibb.co/ygnXDBZ/me01-1.jpg" />
-                        </div>
-                    </label>
-                </div>
-                    <a className="btn rounded-full py-2 px-6 text-[#49CF9E]">Button</a>
+                    <div className="flex items-center justify-center">
+                        {
+                            user ? <>
+                                <p>{user?.email}</p>
+                                <button className="btn btn-primary ml-5" onClick={handleSignOut}>Sign Out</button>
+                            </> : <NavLink to="/login">
+                                <button className="btn btn-primary ml-5" >login</button>
+                            </NavLink>
+                        }
+                    </div>
                 </div>
             </div>
         </div>

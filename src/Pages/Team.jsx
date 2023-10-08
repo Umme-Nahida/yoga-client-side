@@ -1,6 +1,6 @@
+import React from 'react';
 
-
-const Banner = () => {
+const Team = () => {
     return (
         <div className="flex items-center justify-center bg-gradient-to-tr from-sky-500 to-teal-300 py-10 px-5 md:py-12 md:px-10 lg:py-24 lg:px-28">
             <div className=" navbar-start">
@@ -9,10 +9,10 @@ const Banner = () => {
                 <button className="btn bg-[#FFFFFF] rounded-full py-4 px-8 mt-10 text-[#49CF9E]">GET STARTED</button>
             </div>
             <div className="navbar-end ml-32">
-                <img  className="w-[500px]" src="https://i.ibb.co/ZL21q0n/yoga-14.png" alt="" />
+                <img className="w-[500px]" src="https://i.ibb.co/ZL21q0n/yoga-14.png" alt="" />
             </div>
         </div>
     );
 };
 
-export default Banner;
+export default Team;
