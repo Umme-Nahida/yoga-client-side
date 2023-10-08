@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/cgZbYy5/yinyoga.jpg",
+        "img_2": "https://i.ibb.co/9cNJjVP/Rectangle-4284.png",
+        "title": "Yin Yoga",
+        "description": "Yin yoga involves holding poses for an extended period, allowing for deep stretching of connective tissues and muscles. Regular practice can lead to increased flexibility and mobility. It can help maintain and improve joint health by increasing circulation and lubrication of the joints.",
+        "price": 300
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/gDCgRnL/getty-509e0c7ed3c9425d8b8c09788c40c55f.jpg",
+        "img_2": "https://i.ibb.co/ynthNyn/Rectangle-4287-1.png",
+        "title": "Hot Yoga",
+        "description": " Hot yoga Practicing in a heated room can increase sweating, aiding in the detoxification process. The heat helps muscles relax and improves flexibility, making it easier to get into poses. The elevated heart rate during hot yoga can provide cardiovascular benefits. The challenging environment can improve mental concentration and discipline.",
+        "price": 350
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/cw94wFg/yin.jpg",
+        "img_2": "https://i.ibb.co/nbxwHCJ/Rectangle-4287.png",
+        "title": "Stress Reliever",
+        "description": "Yoga, in general, helps reduce stress by promoting relaxation and mindfulness. Yoga practices can help regulate cortisol levels, a stress hormone. Reduced stress often leads to improved sleep quality. Yoga can enhance emotional resilience and provide tools for managing stress.",
+        "price": 399
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/ZGhKVVw/istockphoto-944619684-612x612.jpg",
+        "img_2": "https://i.ibb.co/fk2SkVN/Rectangle-4287-2.png",
+        "title": "Bikram Yoga",
+        "description": "The heat in Bikram yoga can promote better blood circulation. Heat allows for a greater range of motion, aiding in flexibility. The vigorous nature of Bikram yoga can contribute to weight management. Also, Bikram yoga can enhance mental focus and clarity.",
+        "price": 400
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/sKj9V7W/Re-Engergize-Stretch01.jpg",
+        "img_2": "https://i.ibb.co/9cNJjVP/Rectangle-4284.png",
+        "title": "Re-Engergize & Stretch",
+        "description": "Gentle movement and stretching can invigorate the body and mind. Stretching helps alleviate muscle tension and soreness. Regular stretching can lead to better posture and reduced aches and pains. Stretching and mindful movement can relieve stress and tension.",
+        "price": 490
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/rtpXH5Y/mind-soul01.webp",
+        "img_2": "https://i.ibb.co/nbxwHCJ/Rectangle-4287.png",
+        "title": "Mind & Soul",
+        "description": " Yoga can bring mental peace, clarity, and inner calm. Some forms of yoga incorporate spiritual elements and can deepen one's sense of spirituality. Yoga encourages self-awareness and introspection. Yoga can improve emotional regulation and promote a positive outlook on life.",
+        "price": 500
+    }
+]
