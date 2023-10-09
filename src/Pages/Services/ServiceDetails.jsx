@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const ServiceDetails = () => {
     const allServicesData = useLoaderData()
@@ -8,7 +8,7 @@ const ServiceDetails = () => {
     console.log(id)
     const getOneService = allServicesData.find(item => item.id == idInt)
     console.log(getOneService)
-    const { description, img, title, price, } = getOneService
+    const { description, img, title, price, introductor, time } = getOneService
     return (
         <div>
             <div className="relative ">
@@ -23,9 +23,14 @@ const ServiceDetails = () => {
                 </p>
 
                 <div className="card-actions justify-center mt-5">
-                    <div className="badge badge-outline py-4 px-6">Price: {price}</div>
-                    <div className="badge badge-outline py-4 px-6">Id: {id} </div>
+                    <div className="badge badge-outline py-4 px-6"> Time: {time} </div>
+                    <div className="badge badge-outline py-4 px-6">With {introductor}</div>
                 </div>
+                <Link to="/register">
+                    <div className="mt-8 ">
+                        <button className="btn btn-primary w-20 md:w-52 lg:w-80 rounded-full">Register</button>
+                    </div>
+                </Link>
 
             </div>
         </div>

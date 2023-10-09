@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <div className=" bg-slate-100">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 md:gap-5 p-10 md:p-10 lg:p-20 ">
                     {
                         servicesData?.map(dataItem => <Service key={dataItem.id} dataItem={dataItem}></Service>)
                     }

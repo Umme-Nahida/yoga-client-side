@@ -1,10 +1,15 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
 
 const Register = () => {
-    const {createUser} = useContext(AuthContext)
+    const {createUser, signInWithGoogle} = useContext(AuthContext)
+    const navigate = useNavigate();
+
+    const handleGoogle = ()=>{
+        signInWithGoogle()
+    }
 
      const handleRegister= e =>{
         e.preventDefault();
@@ -34,6 +39,8 @@ const Register = () => {
             console.log(result.user)
             toast.success('Successfully created!');
             e.target.reset();
+            navigate('/');
+
         })
         .catch(error=>{
             console.log(error)
@@ -76,6 +83,7 @@ const Register = () => {
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Register</button>
                     </div>
+                    <button onClick={handleGoogle} className="btn btn-ghost">SignIn with Google</button>
                     <p>You have already account so please <Link to= '/login'><a className="text-blue-700">Login</a></Link></p>
                     <Toaster></Toaster>
                 </form>

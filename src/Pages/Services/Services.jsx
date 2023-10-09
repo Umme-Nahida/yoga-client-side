@@ -8,8 +8,8 @@ const Service = ({ dataItem }) => {
     const { title, img, price, description, id } = dataItem;
     // console.log(dataItem)
     return (
-        <div className="card lg:w-96 bg-base-100 shadow-xl text-center ">
-            <figure><img src= {img} alt="Shoes" /></figure>
+        <div className="card lg:w-full w-full md:w-full bg-base-100 shadow-xl text-center ">
+            <figure><img src= {img} alt="Shoes"  /></figure>
             <div className="card-body">
                 <h2 className="text-[#49CF9E] text-2xl font-semibold">{title} </h2>
                  {
